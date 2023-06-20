@@ -1,6 +1,5 @@
 🟥 DOCKER Comands 🟥
 
-
 ||| comandos docker
 
 
@@ -141,6 +140,32 @@ no navegador [localrost:3000
 
 > docker system prune
 
-
 ## referência https://www.youtube.com/watch?v=np_vyd7QlXk
 
+⭕⭕⭕
+
+## criando uma imagem
+
+# criando uma imagem se baseando numa imagem node
+FROM node                                          
+
+# criar uma pasta para colocar a aplicação
+WORKDIR /usr/src/app
+
+# copiar as dependências 
+# se utilizar . no lucar do /usr/src/app ele remete ao workdir
+COPY package.json /usr/src/app/
+
+# instalando os pacotes para criar no container
+RUN npm install
+
+# copiando tudo o que tem aqui para o workdir
+COPY . .
+
+# expor a porta que utilizamos (index.js)
+EXPOSE 3000
+
+# executar o comando
+CMD ["NODE", "INDEX.JS"]
+
+## end
