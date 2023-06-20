@@ -36,3 +36,5 @@ ps      | Lista os processos      [ps | cut -c7]
 
 https://ohmyz.sh
 https://www.youtube.com/watch?v=bs1-Wxb_KIc
+
+Control Z - quit()- exit()		| sai do pronpt do Python 
