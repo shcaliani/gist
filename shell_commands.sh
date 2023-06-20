@@ -29,3 +29,10 @@ touch   | Criar arquivos
 time    | Na frente do comando, monitorar o tempo de execução nas dimensões [time xx.sh ou time ls]
 cut     | Corta o texto conforme definiçao [cut -c2]
 ps      | Lista os processos      [ps | cut -c7]
+
+⭕️⭕️⭕️
+
+🔸 Instalar o oh myz.sh
+
+https://ohmyz.sh
+https://www.youtube.com/watch?v=bs1-Wxb_KIc
